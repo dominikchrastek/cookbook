@@ -8,7 +8,7 @@ import Recipe from './components/Recipe/';
 
 
 const animation = keyframes`
-  100% { 
+  100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg)
   }

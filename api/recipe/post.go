@@ -1,7 +1,7 @@
 package recipe
 
 import (
-	"gopi/models"
+	"cookbook/api/models"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -15,7 +15,7 @@ const postQuery = `
 
 // Post create recipe
 func (r *Routes) Post(c *gin.Context) {
-	data := &models.Challenge{}
+	data := &models.Recipe{}
 	if err := c.BindJSON(data); err != nil {
 		c.AbortWithError(http.StatusBadRequest, err)
 		return
